@@ -6,7 +6,7 @@ export default class Validator {
     }
 
     validateUsername() {
-        return /^[^0-9|\-|\_][a-z|\d|\-|\_]+[^0-9|\-|\_]$/mig.test(this.username)
+        return /^[a-z]+(\d{0,3})[a-z\-\_]+(\d{0,3})[a-z\-\_]+(\d{0,3})[a-z]+$/ig.test(this.username)
     }
 
 }
