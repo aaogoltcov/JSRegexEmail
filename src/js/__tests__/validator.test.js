@@ -31,5 +31,7 @@ test('should wright e-mail', () => {
     expect((new Validator('nick_name')).validateUsername()).toBe(true);
     expect((new Validator('nic4k456n7ame')).validateUsername()).toBe(true);
     expect((new Validator('nic123k456n789ame')).validateUsername()).toBe(true);
+    expect((new Validator('a123z')).validateUsername()).toBe(true);
+    expect((new Validator('a')).validateUsername()).toBe(true);
 
 })
